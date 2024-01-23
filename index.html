@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Weather Today</h2>
+          <div class="item1">
+             <div class="item">
+            <input type="text"  class = "inpt" placeholder="Enter city name" autocomplete="off">
+
+            <button class="fa-solid fa-magnifying-glass" id = "search-btn"></button>
+           
+            </div>
+            <div class="error">
+                <h3>Location not found</h3>
+                <img src="final_errorr-removebg-preview.png" alt="">
+            </div>
+            <div class="weatherbody">
+                <img src="cloud.png" alt="" class = "weatherimg">
+                <div class="weather">
+                   <p class = "temp">0 <sup>°C</sup></p>
+                   <p class = "description">Cloudy</p>
+                </div>
+                <div class="more">
+                    <div class="winddata">
+                        <i class="fa-solid fa-wind"></i>
+                        <p class = "windspeed"> 12Km/hr</p>
+                        <p class="wind">wind speed</p>
+                    
+                    </div>
+                    <div class="humiditydata">
+                        <i class="fa-solid fa-temperature-high"></i>
+                        <p class = "humidity"> 45%</p>
+                        <p class="humid">Humidity</p>
+                        
+                    </div>
+                </div>
+        </div>
+       
+    </div>
+      <script src="script.js"></script>  
+       
+    
+</body>
+</html>

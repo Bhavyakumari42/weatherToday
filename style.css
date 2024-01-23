@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   font-size: 10px;
+   height: 100%;
+   width:100%;
+   font-family: 'Lora', serif;
+}
+.container
+{
+   height: 100vh;
+    width: 100vw;
+    background-color: #d8f8ff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+h2{
+    margin-top: calc(100vh - 95vh);
+    margin-left: calc(100vw - 62vw);
+    font-size: 3vmax;
+    color: #565554;
+}
+.item
+{
+    display: flex;
+  
+ gap: 15%;
+
+
+}
+.item input{
+    border: none;
+    width: 60%;
+    margin-left:2vw ;
+    height: 100%;
+ margin-top: 2vh;
+
+}
+.item button{
+    width: 10%;
+    border: none;
+    background-color: #d8f8ff;
+    font-size: 1.5vw;
+    border-radius: 67%;
+    height: 101%;
+    margin-top: 2vh;
+
+ 
+}
+.item button:hover
+{
+    background-color: rgb(148, 224, 254);
+}
+
+.item input:focus{
+  outline: none;
+}
+.item input:active{
+    background-color: #d8f8ff;
+}
+.item input::placeholder
+{
+   
+    font-size: 1.5vw;
+    font-family: 'Lora', serif;
+    background-color: #d8f8ff;
+    width: 90%;
+   height: 100%;
+   padding-left: 1vw;
+   padding-top: 2vh;
+ 
+    
+}
+.item1
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    width: 27%;
+    margin-top: calc(100vh - 96vh);
+    margin-left: calc(100vw - 65vw);
+    height: 5vmax;
+    border-radius: 10px;
+   
+}
+.error{
+
+    display: none;
+   
+    flex-direction: column;
+}
+.error img
+{
+    width: 167%;
+    display: inline;
+    position: relative;
+    left: -9vw;
+    top: 12vh;
+   
+}
+.error h3{
+    position: relative;
+    left: 5vw;
+    top: 10vh;
+    font-size: 2vw;
+    color: #6a6a6a;
+   
+}
+.weatherbody img{
+ width: 50%;
+ display: inline;
+ position: relative;
+ left: 7vw;
+ top: 3vh;
+}
+.weatherbody{
+    display: none;
+    flex-direction: column;
+}
+.weather
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.temp{
+    font-size: 3vw;
+    position: relative;
+    top: 5vh;
+    text-transform: capitalize;
+
+}
+.description
+{
+    position: relative;
+    top: 5vh;
+    font-size: 1.7vw;
+    text-transform: capitalize;
+}
+.more
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 4.5vmax 2vmax 0vw;
+    position: relative;
+
+}
+.more i{
+    font-size: 2vw;
+    position: absolute;
+    top: 1.4vh;
+}
+.more p{
+    font-size:1.2vw;
+    text-transform: capitalize;
+    margin-left: 2.7vw;
+}
+.winddata
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: .3vh;
+}
+.humiditydata
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: .5vh;  
+}
+.windspeed
+{
+    font-weight: bold;
+}
+.humidity{
+font-weight: bold;
+}
+@media only screen and (max-width: 760px)
+{
+ h2
+ {
+    font-size: 7vw;
+    /* margin-top: calc(100vh - 80vh); */
+    margin-left: calc(100vw - 72vw);
+
+ }
+ .item
+{
+   
+    width: 80%;
+    height: 60%;
+    margin-top: calc(100vh - 88vh);
+    margin-left: calc(100vw - 87vw);
+   
+}
+.item input::placeholder
+{
+    font-size: 2.5vh;
+    width: 95%;
+   height: 25%;
+   padding-left: 1.5vh;
+ 
+  
+}
+item input {
+    border: none;
+    width: 60%;
+    margin-left: 2vw;
+    height: 100%;
+    margin-top: 2vh;
+}
+.item button{
+    width: 18%;
+    font-size: 2.5vh;
+    height: 19%;
+    margin-top: 0vh;
+
+}
+.item1
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    width: 92%;
+    margin-top: calc(100vh - 96vh);
+    margin-left: calc(100vw - 96vw);
+    height: 75vh;
+    border-radius: 10px;
+   
+}
+}
